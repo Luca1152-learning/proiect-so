@@ -1,0 +1,6 @@
+331	STD		{ int sys_mtxopen(void); }
+332	STD		{ int sys_mtxclose(int d); }
+333	STD		{ int sys_mtxlock(int d); }
+334	STD		{ int sys_mtxunlock(int d); }
+335	STD 	{ int sys_mtxlist(int *processes, int *mutexes, pid_t *tids, size_t lists_size); }
+336	STD		{ int sys_mtxgrant(int process, int mutex, pid_t tid); }
